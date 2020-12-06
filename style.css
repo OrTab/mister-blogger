@@ -65,7 +65,6 @@ h2 {
 .main-header {
     height: 7.825em;
     background-color: #292929;
-    z-index: 99;
 }
 
 .flex-grow1 {
@@ -318,7 +317,7 @@ body.open-menu .more-info-btn {
         transform: translateY(-130%);
         font-size: 1em;
         overflow: hidden;
-        transition: transform .8s;
+        transition: transform .6s;
     }
     .main-header {
         height: 5.825em;
