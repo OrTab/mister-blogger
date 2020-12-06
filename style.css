@@ -26,7 +26,7 @@ html {
 
 body {
     margin: 0%;
-    font-size: 0.78rem;
+    font-size: 0.90rem;
 }
 
 h1,
@@ -64,7 +64,8 @@ h2 {
 
 .main-header {
     height: 7.825em;
-    background-color: #292929
+    background-color: #292929;
+    z-index: 99;
 }
 
 .flex-grow1 {
@@ -235,7 +236,7 @@ body.open-menu .more-info-btn {
 
 .rights-txt {
     color: #a6a6a6;
-    font-size: 0.8125em;
+    font-size: 0.6125rem;
 }
 
 .rights-txt span {
@@ -311,13 +312,13 @@ body.open-menu .more-info-btn {
 
 @media(max-width:760px) {
     .main-nav {
-        height: 24.4rem;
+        height: 28rem;
         background-color: #aeaeaef7;
         flex-direction: column;
         transform: translateY(-130%);
         font-size: 1em;
         overflow: hidden;
-        transition: transform .2s;
+        transition: transform .8s;
     }
     .main-header {
         height: 5.825em;
