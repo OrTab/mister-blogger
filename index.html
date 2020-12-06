@@ -20,47 +20,44 @@
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <button onclick="toggleMenu(this)" class="menu-btn">☰</button>
             </div>
         </nav>
     </header>
     <main class="card-container main-layout">
 
         <div class="card">
-            <div class="card-img">
-                <img class="card-image" src="img/pic1.png" alt=""></div>
-            <div class="card-details flex flex-direction-cul space-between">
+
+            <img class="card-image" src="img/pic1.png" alt="">
+            <div class="card-details flex flex-direction-cul">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading <span> →</span>
-                </button>
+                <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="more-info-btn">Continue Reading</button>
             </div>
         </div>
         <div class="card">
-            <div class="card-img">
-                <img class="card-image" src="img/pic2.png" alt=""></div>
-            <div class="card-details flex flex-direction-cul space-between">
+            <img class="card-image" src="img/pic2.png" alt="">
+            <div class="card-details flex flex-direction-cul">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading <span> →</span>
-                </button>
+                <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="more-info-btn">Continue Reading</button>
             </div>
         </div>
         <div class="card">
-            <div class="card-img">
-                <img class="card-image" src="img/pic3.png" alt=""></div>
-            <div class="card-details flex flex-direction-cul space-between">
+            <img class="card-image" src="img/pic3.png" alt="">
+            <div class="card-details flex flex-direction-cul">
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading <span> →</span>
-                </button>
+                <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button class="more-info-btn">Continue Reading</button>
+
             </div>
         </div>
     </main>
-    <section class="page-nav-container">
-        <div class="page-navigation main-layout flex space-between">
+    <section class="page-nav-container main-layout">
+        <div class="page-navigation flex space-between">
             <button class="page-btn prev">← Previous</button>
             <button class="page-btn">Next →</button>
         </div>
@@ -88,7 +85,11 @@
         </div>
 
     </footer>
-
+    <script>
+        function toggleMenu(elBtn) {
+            var elBody = document.body.classList.toggle('open-menu')
+        }
+    </script>
 </body>
 
 </html>
