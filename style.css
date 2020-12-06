@@ -135,6 +135,10 @@ body.open-menu .main-screen {
     visibility: visible;
 }
 
+body.open-menu .more-info-btn {
+    z-index: -1;
+}
+
 
 /* card */
 
@@ -169,7 +173,7 @@ body.open-menu .main-screen {
     outline-style: none;
     margin-top: 0.8em;
     margin-bottom: 1.8em;
-    /* position: relative; */
+    position: relative;
     align-self: flex-start;
     padding: 0 2em;
     transition: padding .3s;
@@ -182,8 +186,7 @@ body.open-menu .main-screen {
 .more-info-btn:hover::after {
     content: " →";
     position: absolute;
-    right: 14.4em;
-    /* right: 1em; */
+    right: 1em;
 }
 
 .more-info-btn:hover {
