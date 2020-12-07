@@ -11,19 +11,19 @@
 
 <body>
     <div class="main-screen" onclick="toggleMenu()"></div>
-    <header class="main-header flex align-items-center">
-        <nav class="nav container main-layout flex align-items-center space-between flex-grow1">
+    <header class="main-header">
+        <div class="nav-div main-layout flex align-items-center space-between">
             <div class="logo"><img src="img/Blogin-header.png" alt=""></div>
-            <div class="link-container">
+            <nav class="nav-container flex align-items-center">
                 <ul class="main-nav flex list-clean">
                     <li><a href="#">Journal</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <button onclick="toggleMenu(this)" class="menu-btn">☰</button>
-            </div>
-        </nav>
+            </nav>
+            <button onclick="toggleMenu(this)" class="menu-btn">☰</button>
+        </div>
     </header>
     <main class="card-container main-layout">
 
