@@ -34,7 +34,7 @@
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading</button>
+                <button class="more-info-btn" onclick="openModal()">Continue Reading</button>
             </div>
         </div>
         <div class="card">
@@ -43,7 +43,7 @@
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading</button>
+                <button class="more-info-btn" onclick="openModal()">Continue Reading</button>
             </div>
         </div>
         <div class="card">
@@ -52,11 +52,23 @@
                 <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
                 <p class="card-info">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p class="flex-grow1">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button class="more-info-btn">Continue Reading</button>
+                <button class="more-info-btn" onclick="openModal()">Continue Reading</button>
 
             </div>
         </div>
     </main>
+    <!-- <div class="modal flex flex-direction-cul">
+        <h2>Join us to get access to the latest stories!</h2>
+        <div class="email-singup flex flex-direction-cul">
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+            <label for="email">Subscribe To Stay Tuned!</label>
+            <div class="sub flex">
+                <input id="email" type="email" placeholder="Email" name="email-sub">
+                <button class="register-btn">Register</button>
+            </div>
+            <button class="close-modal" onclick="closeModal()">X</button>
+        </div>
+    </div> -->
     <section class="page-nav-container main-layout">
         <div class="page-navigation flex space-between">
             <button class="page-btn prev">← Previous</button>
@@ -89,6 +101,18 @@
     <script>
         function toggleMenu(elBtn) {
             var elBody = document.body.classList.toggle('open-menu')
+        }
+
+        function openModal() {
+            var elModal = document.querySelector('.modal')
+            elModal.style.display = 'flex'
+
+        }
+
+        function closeModal() {
+            var elModal = document.querySelector('.modal')
+            elModal.style.display = 'none'
+
         }
     </script>
 </body>

@@ -47,6 +47,49 @@ h2 {
     color: #4f4e4e;
 }
 
+.modal {
+    position: relative;
+    /* max-width: 50%; */
+    background-color: rgb(236 232 227 / 69%);
+    max-width: 50%;
+    padding: 1em;
+    display: none;
+}
+
+.modal h2 {
+    font-size: 1em;
+}
+
+.modal p {
+    margin: 0 0 1em;
+}
+
+.modal label {
+    font-size: 1.05em;
+    margin: 0 0 0.75em;
+    font-family: lato-bold;
+}
+
+input[type="email" i] {
+    font-family: lato-bold;
+    width: 75%;
+}
+
+.register-btn {
+    font-family: lato;
+    cursor: pointer;
+    padding: 0 2em;
+    align-self: center;
+    margin-left: 0.75em;
+}
+
+.close-modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
 
 /* LAYOUT */
 
@@ -314,7 +357,7 @@ body.open-menu .more-info-btn {
         height: 28rem;
         background-color: #aeaeaef7;
         flex-direction: column;
-        transform: translateY(-130%);
+        transform: translate(0, -130%);
         font-size: 1em;
         overflow: hidden;
         transition: transform .6s;
@@ -338,7 +381,7 @@ body.open-menu .more-info-btn {
         border-right: none;
     }
     body.open-menu .main-nav {
-        transform: translateY(59.4%);
+        transform: translate(-14%, 59.4%);
     }
     .menu-btn {
         display: block;
